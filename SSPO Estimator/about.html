@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (min-width: 640px) { body {font-size:1rem;} }
+        @media (min-width:960px) { body {font-size:1rem;} }
+        @media (min-width:1100px) { body {font-size:1rem;} }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        header .logo-container img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav li {
+            margin-left: 20px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn:hover {
+            background-color: #3e8e41;
+        }
+        nav button {
+            font-size: 20px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        nav button:hover {
+            color: white;
+            background-color: #4CAF50;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn:hover {
+            background-color: #3e8e41;
+        }
+       
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            flex-basis: calc(40% - 20px);
+            height: calc(40% - 20px);
+            box-sizing: border-box;
+            border: white;
+            margin: 2vh;
+            line-height: 2;
+        }
+        
+        .box:nth-child(1) {
+            background-image: url('images/wee.jpg');
+            background-size: cover;
+        }
+        .box:nth-child(4) {
+            background-image: url('images/uses.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logoo.png" alt="Logo">
+            <i><span>SSPO <br>Estimator</span></i>
+        </div>
+        <nav>
+            <ul>
+                <nav>
+                    <ul>
+                        <li><button onclick="location.href='home.html'">Home</button></li>
+                        <li class="dropdown">
+                            <button class="dropbtn">About</button>
+                            <div class="dropdown-content">
+                                <a href="about Us.html">About Us</a>
+                                <a href="about.html">About Software</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">Users</button>
+                            <div class="dropdown-content">
+                                <a href="startup.html">Start-Up</a>
+                                <a href="Experience.html">Experience</a>
+                            </div>
+                        </li>
+                        <li><button onclick="location.href='view info.html'">View Information</button></li>
+                        <li><button onclick="location.href='help.html'">Help</button></li>
+                       
+                    </ul>
+                </nav>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box"> </div>
+        <div class="box">
+            <h2>Here you will find what you want to know about the software</h2>
+            <p>I Welcome to our website, where we provide you with valuable information on production and processing quantities
+                 of palm oil and their related cost information. Our goal is to help small scale palm oil processing startups 
+                 and companies that want to expand make informed decisions.<br>
+
+                We understand that as a small scale palm oil processing startup or a company looking to expand, you may face various
+                 constraints such as limited resources, lack of access to reliable information, and inadequate knowledge of the industry.
+                  That's why we have created this platform to provide you with the necessary information to help you overcome these challenges.<br>
+                
+               
+               
+                </p>
+        </div>
+        <div class="box">
+            <p>
+                Our website provides you with up-to-date information on the production and processing quantities of palm oil, 
+                including the cost of fresh palm fruit bunch(FFB), and other related expenses. We also provide you with insights into the latest
+                 trends in the industry and the challenges facing palm oil processing startups.<br>
+                
+                We understand that every business is unique, and that's why we offer customized solutions tailored to your specific needs. 
+                Our team of experts is always available to answer your questions and provide you with the necessary guidance to help you succeed.<br>
+                
+                In conclusion, our website is your go-to source for information on production and processing quantities of palm oil and their related 
+                cost information. We are committed to providing you with reliable and accurate information to help you make informed decisions that will 
+                drive your business forward.
+                
+             
+            </p>
+
+        </div>
+        <div class="box">
+            <p>
+                
+            </p>
+        </div>
+    </div>
+</body>
+</html>
